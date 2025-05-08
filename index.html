@@ -1,482 +1,576 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Complete Responsive Personal Portfolio Website Using HTML CSS & JavaScript | Codehal</title>
-    <!-- boxicons -->
+    <title>Responsive 3D Personal Portfolio Website using HTML CSS & Javascript | By Hussein Essam </title>
+    <!-- Boxicons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <!-- custom css -->
-    <link rel="stylesheet" href="css/style.css">
-</head>
 
+    <!-- CSS File Link  -->
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
 
-<!-- header -->
-<header class="active">
-    <a href="#" class="logo">Hussein Essam</a>
+    <!-- navbar -->
 
-    <i class='bx bx-menu' id="menu-icon"></i>
-
-    <nav>
-        <a href="#" class="active">Home</a>
-        <a href="#">Services</a>
-        <a href="#">Resume</a>
-        <a href="#">Portfolio</a>
-        <a href="#">Contact</a>
+    <nav class="nav">
+        <ul class="nav-list">
+            <li class="active">
+                <i class='bx bx-home-alt'></i>
+                <span class="tooltip">Home</span>
+            </li>
+            <li>
+                <i class='bx bx-user'></i>
+                <span class="tooltip">About</span>
+            </li>
+            <li>
+                <i class='bx bx-detail'></i>
+                <span class="tooltip">Resume</span>
+            </li>
+            <li>
+                <i class='bx bx-briefcase'></i>
+                <span class="tooltip">Portfolio</span>
+            </li>
+            <li>
+                <i class='bx bx-envelope'></i>
+                <span class="tooltip">Contact</span>
+            </li>
+        </ul>
     </nav>
-</header>
- 
-    <!-- bars background -->
-     <div class="bars-box active">
-        <div class="bar" style="--i:6;"></div>
-        <div class="bar" style="--i:5;"></div>
-        <div class="bar" style="--i:4;"></div>
-        <div class="bar" style="--i:3;"></div>
-        <div class="bar" style="--i:2;"></div>
-        <div class="bar" style="--i:1;"></div>
-     </div>
-
+<div class="container">
+    <div class="box">
     <!-- home section -->
-     <section class="home active">
-        <div class="home-detail">
+     <section class="section home active">
+        <div class="home-info">
+            <h3>Hello I'm</h3>
             <h1>Hussein Essam</h1>
-            <h2>I'm
-                <span style="--i:4;" data-text="Coder">Coder</span>
-                <span style="--i:3;" data-text="Solving Problems">Solving Problems</span>
-                <span style="--i:2;" data-text="Create Websites">Create Websites</span>
-                <span style="--i:1;" data-text="Designer">Designer</span>
-
-            </h2>
-            <p> I'm a passionate and dedicated individual with a strong foundation in programming and a deep love for creating innovative solutions. </p>
+            <h3>Front-End Developer</h3>
+            <p class="desc">
+            I'm a passionate Front-End Developer with a strong foundation in web development. My journey in the world of coding started with a deep love for creating dynamic and interactive user interfaces. I'm always eager to learn new technologies and techniques to enhance my skills and deliver exceptional results.
+            </p>
             <div class="btn-sci">
                 <a href="#" class="btn">Download CV</a>
                 <div class="sci">
-                    <a href="#"><i class='bx bxl-github' ></i></a>
-                    <a href="#"><i class='bx bxl-linkedin' ></i></a>
-                    <a href="#"><i class='bx bxl-twitter' ></i></a>
-                    <a href="#"><i class='bx bxl-facebook' ></i></a>
+                    <a href="#">
+                        <i class='bx bxl-github'></i>
+                        <span class="tooltip">Github</span>
+                    </a>
+                    <a href="#">
+                        <i class='bx bxl-linkedin'></i>
+                        <span class="tooltip">Linkedin</span>
+                    </a>
+                    <a href="#">
+                        <i class='bx bxl-twitter'></i>
+                        <span class="tooltip">Twitter</span>
+                    </a>
+                    <a href="#">
+                        <i class='bx bxl-youtube'></i>
+                        <span class="tooltip">Youtube</span>
+                    </a>
                 </div>
             </div>
+
         </div>
 
-        <div class="home-img">
-            <div class="img-box">
-                <div class="img-item">
-                    <img src="images/Hussein Essam.png">
-                </div>
-
+        <div class="img-wrapper">
+            <div class="img-box home-img">
+                <img src="My Portfolio/Hussein Essam.png" alt="">
             </div>
         </div>
      </section>
 
-    <!-- services section -->
-     <section class="services">
-        <h2 class="heading">My <span>Services</span></h2>
-        <div class="services-container">
-            <div class="services-box">
-                <div class="icon">
-                    <i class='bx bx-code-alt' ></i>
-                    <a href="#"><i class='bx bx-arrow-back' ></i></a>
+    <!-- about section -->
+     <section class="section about">
+        <div class="img-wrapper">
+            <div class="img-box about-img">
+                <img src="My Portfolio/Hussein Essam.png" alt="">
+            </div>
+        </div>
+
+        <div class="about-info">
+            <h2 class="title">About Me</h2>
+            <h3>Front-End Developer!</h3>
+            <p class="desc">
+                I'm Hussein Essam, a passionate Front-End Developer with a strong foundation in web development. My journey in the world of coding started with a deep love for creating dynamic and interactive user interfaces. I'm always eager to learn new technologies and techniques to enhance my skills and deliver exceptional results.
+            </p>
+            <a href="#" class="btn">View More</a>
+        </div>
+     </section>
+    <!-- resume (experience, skills, education) section -->
+     <section class="section resume">
+        <h2 class="title">Resume</h2>
+        <div class="tab-box">
+            <div class="tab-list resume-list active">
+                <h3>Experience</h3>
+            </div>
+            <div class="tab-list resume-list">
+                <h3>Skills</h3>
+            </div>
+            <div class="tab-list resume-list">
+                <h3>Education</h3>
+            </div>
+        </div>
+
+        <div class="tab-wrapper">
+            <div class="tab-grid resume-box experience active">
+                <div class="tab-item resume-item">
+                    <h4>2022 - Present</h4>
+                    <h4>Front-End Developer</h4>
+                    <h4>Google</h4>
+                    <p>As a Front-End Developer at Google, I was responsible for creating dynamic and interactive user interfaces for our products. I worked closely with the design team to ensure that the interfaces were both visually appealing and easy to use. I also collaborated with other developers to ensure that the interfaces were consistent and aligned with our overall design strategy.</p>
                 </div>
-                <h3>Web Development</h3>
-                <p>I'm Web Developer With 2 Years Experience</p>
-            </div>
 
-            <div class="services-box">
-                <div class="icon">
-                    <i class='bx bx-paint' ></i>
-                    <a href="#"><i class='bx bx-arrow-back' ></i></a>
+                <div class="tab-item resume-item">
+                    <h4>2021 - 2022</h4>
+                    <h4>Full Stack Developer</h4>
+                    <h4>Youtube</h4>
+                    <p>As a Full Stack Developer at Youtube, I was responsible for creating dynamic and interactive user interfaces for our products. I worked closely with the design team to ensure that the interfaces were both visually appealing and easy to use. I also collaborated with other developers to ensure that the interfaces were consistent and aligned with our overall design strategy.</p>
                 </div>
-                <h3>UI/UX Design</h3>
-                <p>I'm Training With 2 Years Experience</p>
-            </div>
 
-
-            <div class="services-box">
-                <div class="icon">
-                    <i class='bx bx-palette' ></i>
-                    <a href="#"><i class='bx bx-arrow-back' ></i></a>
+                <div class="tab-item resume-item">
+                    <h4>2020 - 2021</h4>
+                    <h4>Back-End Developer</h4>
+                    <h4>Apple Inc.</h4>
+                    <p>As a Back-End Developer at Apple Inc., I was responsible for creating dynamic and interactive user interfaces for our products. I worked closely with the design team to ensure that the interfaces were both visually appealing and easy to use. I also collaborated with other developers to ensure that the interfaces were consistent and aligned with our overall design strategy.</p>
                 </div>
-                <h3>Graphic Design</h3>
-                <p>I'm Training With 2 Years Experience</p>
-            </div>
 
-            <div class="services-box">
-                <div class="icon">
-                    <i class='bx bx-trending-up' ></i>
-                    <a href="#"><i class='bx bx-arrow-back' ></i></a>
+                <div class="tab-item resume-item">
+                    <h4>2019 - 2020</h4>
+                    <h4>Front-End Developer Internal</h4>
+                    <h4>Amazon.com Inc.</h4>
+                    <p>As a Front-End Developer Internal at Amazon.com Inc., I was responsible for creating dynamic and interactive user interfaces for our products. I worked closely with the design team to ensure that the interfaces were both visually appealing and easy to use. I also collaborated with other developers to ensure that the interfaces were consistent and aligned with our overall design strategy.</p>
                 </div>
-                <h3>SEO</h3>
-                <p>I'm Training With 2 Years Experience</p>
-            </div>
 
-
-            <div class="services-box">
-                <div class="icon">
-                    <i class='bx bx-slideshow' ></i>
-                    <a href="#"><i class='bx bx-arrow-back' ></i></a>
+                <div class="tab-item resume-item">
+                    <h4>2018 - 2019</h4>
+                    <h4>UI/UX Designer</h4>
+                    <h4>Microsoft Corp.</h4>
+                    <p>As a UI/UX Designer at Microsoft Corp., I was responsible for creating dynamic and interactive user interfaces for our products. I worked closely with the design team to ensure that the interfaces were both visually appealing and easy to use. I also collaborated with other developers to ensure that the interfaces were consistent and aligned with our overall design strategy.</p>
                 </div>
-                <h3>Video Editing</h3>
-                <p>I'm Training With 2 Years Experience</p>
-            </div>
 
-            <div class="services-box">
-                <div class="icon">
-                    <i class='bx bx-camera' ></i>
-                    <a href="#"><i class='bx bx-arrow-back' ></i></a>
-                </div>
-                <h3>Photoghraphy</h3>
-                <p>I'm Training With 2 Years Experience</p>
-            </div>
-            </div>
-    </section>
-
-    <!-- resume section -->
-     <section class="resume">
-        <div class="resume-container">
-            <div class="resume-box">
-                <h2>Why Hire Me?</h2>
-                <p class="desc">In The Future I Will Be A Full Stack Developer</p>
-                <button class="resume-btn active">Experience</button>
-                <button class="resume-btn">Education</button>
-                <button class="resume-btn">Skills</button>
-                <button class="resume-btn">About Me</button>
-            </div>
-
-        <div class="resume-box">
-            <div class="resume-detail experience active">
-                <h2 class="heading">My <span>Expreience</span> </h2>
-                <p class="desc"> I'm Web Developer With 2 Years Experience </p>
-                <div class="resume-list">
-                    <div class="resume-item">
-                        <p class="year">2024 - Present</p>
-                        <h3>Front-End Developer</h3>
-                        <p class="company">ElShams Sporting Club</p>
-                        <p>Creating responsive and user-friendly interfaces for web applications.</p>
-                    </div>
-                    <div class="resume-item">
-                        <p class="year">2023 - 2024</p>
-                        <h3>Full Stack Developer</h3>
-                        <p class="company">Google</p>
-                        <p>Creating responsive and user-friendly interfaces for web applications.</p>
-                    </div>
-                    <div class="resume-item">
-                        <p class="year">2022 - 2023</p>
-                        <h3>Back-End Developer</h3>
-                        <p class="company">Youtube</p>
-                        <p>Creating responsive and user-friendly interfaces for web applications.</p>
-                    </div>
-                    <div class="resume-item">
-                        <p class="year">2021 - 2022</p>
-                        <h3>UI/UX Designer</h3>
-                        <p class="company">Android</p>
-                        <p>Creating responsive and user-friendly interfaces for web applications.</p>
-                    </div>
-                    <div class="resume-item">
-                        <p class="year">2020 - 2021</p>
-                        <h3>Junior Developer</h3>
-                        <p class="company">UxW Corp.</p>
-                        <p>Creating responsive and user-friendly interfaces for web applications.</p>
-                    </div>
+                <div class="tab-item resume-item">
+                    <h4>2017 - 2018</h4>
+                    <h4>Junior Developer</h4>
+                    <h4>Chevron Corp.</h4>
+                    <p>As a Junior Developer at Chevron Corp., I was responsible for creating dynamic and interactive user interfaces for our products. I worked closely with the design team to ensure that the interfaces were both visually appealing and easy to use. I also collaborated with other developers to ensure that the interfaces were consistent and aligned with our overall design strategy.</p>
                 </div>
             </div>
 
-            <div class="resume-detail education">
-                <h2 class="heading">My <span>Education</span> </h2>
-                <p class="desc"> I'm Web Developer With 2 Years Experience </p>
-                <div class="resume-list">
-                    <div class="resume-item">
-                        <p class="year">2024</p>
-                        <h3>Programming Course</h3>
-                        <p class="company">Online Course</p>
-                        <p>Creating responsive and user-friendly interfaces for web applications.</p>
-                    </div>
-
-                    <div class="resume-item">
-                        <p class="year">2022 - 2023</p>
-                        <h3>Web Development Bootcamp</h3>
-                        <p class="company">Online Course Platform</p>
-                        <p>Creating responsive and user-friendly interfaces for web applications.</p>
-                    </div>
-
-                    <div class="resume-item">
-                        <p class="year">2020</p>
-                        <h3>Certified Web Development</h3>
-                        <p class="company">Future Academy HISS</p>
-                        <p>Creating responsive and user-friendly interfaces for web applications.</p>
-                    </div>
-
-                    <div class="resume-item">
-                        <p class="year">2017 - 2018</p>
-                        <h3>Doctor Of Engineering</h3>
-                        <p class="company">Online Course</p>
-                        <p>Creating responsive and user-friendly interfaces for web applications.</p>
-                    </div>
-
-                    <div class="resume-item">
-                        <p class="year">2015 - 2017</p>
-                        <h3>Master of Computer Science</h3>
-                        <p class="company">Online Course</p>
-                        <p>Creating responsive and user-friendly interfaces for web applications.</p>
-                    </div>
-
-                    <div class="resume-item">
-                        <p class="year">2012 - 2015</p>
-                        <h3>Bachelor of Computer Science</h3>
-                        <p class="company">Future Academy HISS</p>
-                        <p>Creating responsive and user-friendly interfaces for web applications.</p>
-                    </div>
+            <div class="tab-grid resume-box skills">
+                <div class="tab-item resume-item">
+                    <i class='bx bxl-html5'></i>
+                    <p>HTML5</p>
+                </div>
+                <div class="tab-item resume-item">
+                    <i class='bx bxl-css3'></i>
+                    <p>CSS3</p>
+                </div>
+                <div class="tab-item resume-item">
+                    <i class='bx bxl-javascript'></i>
+                    <p>JavaScript</p>
+                </div>
+                <div class="tab-item resume-item">
+                    <i class='bx bxl-react'></i>
+                    <p>React.js</p>
+                </div>
+                <div class="tab-item resume-item">
+                    <i class='bx bxl-tailwind-css'></i>
+                    <p>Tailwind.css</p>
+                </div>
+                <div class="tab-item resume-item">
+                    <i class='bx bxl-bootstrap'></i>
+                    <p>Bootstrap</p>
+                </div>
+                <div class="tab-item resume-item">
+                    <i class='bx bxl-angular'></i>
+                    <p>Angular</p>
+                </div>
+                <div class="tab-item resume-item">
+                    <i class='bx bxl-vuejs'></i>
+                    <p>Vue.js</p>
+                </div>
+                <div class="tab-item resume-item">
+                    <i class='bx bxl-nodejs'></i>
+                    <p>Node.js</p>
+                </div>
+                <div class="tab-item resume-item">
+                    <i class='bx bxl-java'></i>
+                    <p>Java</p>
+                </div>
+                <div class="tab-item resume-item">
+                    <i class='bx bxl-php'></i>
+                    <p>PHP</p>
+                </div>
+                <div class="tab-item resume-item">
+                    <i class='bx bxl-python'></i>
+                    <p>Python</p>
+                </div>
+                <div class="tab-item resume-item">
+                    <i class='bx bxl-django'></i>
+                    <p>Django</p>
+                </div>
+                <div class="tab-item resume-item">
+                    <i class='bx bxl-flask'></i>
+                    <p>Flask</p>
+                </div>
+                <div class="tab-item resume-item">
+                    <i class='bx bxl-mongodb'></i>
+                    <p>MangoDB</p>
+                </div>
+                <div class="tab-item resume-item">
+                    <i class='bx bxl-postgresql'></i>
+                    <p>PostgreSQL</p>
+                </div>
+                <div class="tab-item resume-item">
+                    <i class='bx bxl-sketch'></i>
+                    <p>Sketch</p>
+                </div>
+                <div class="tab-item resume-item">
+                    <i class='bx bxl-figma'></i>
+                    <p>Figma</p>
                 </div>
             </div>
 
-            <div class="resume-detail skills">
-                <h2 class="heading">My <span>Skills</span> </h2>
-                <p class="desc"> I'm Web Developer With 2 Years Experience </p>
-                <div class="resume-list">
-                    <div class="resume-item">
-                        <i class='bx bxl-html5'></i>
-                        <span>HTML5</span>
-                    </div>
-                    <div class="resume-item">
-                        <i class='bx bxl-css3' ></i>
-                        <span>CSS3</span>
-                    </div>
-                    <div class="resume-item">
-                        <i class='bx bxl-javascript' ></i>
-                        <span>JavaScript</span>
-                    </div>
-                    <div class="resume-item">
-                        <i class='bx bxl-react' ></i>
-                        <span>React.js</span>
-                    </div>
-                    <div class="resume-item">
-                        <i class='bx bxl-vuejs' ></i>
-                        <span>Vue.js</span>
-                    </div>
-                    <div class="resume-item">
-                        <i class='bx bxl-tailwind-css' ></i>
-                        <span>Tailwind CSS</span>
-                    </div>
-                    <div class="resume-item">
-                        <i class='bx bxl-nodejs' ></i>
-                        <span>Node.js</span>
-                    </div>
-                    <div class="resume-item">
-                        <i class='bx bxl-mongodb' ></i>
-                        <span>MongoDB</span>
-                    </div>
+            <div class="tab-grid resume-box education">
+                <div class="tab-item resume-item">
+                    <h4>2025</h4>
+                    <h4>Programming Course</h4>
+                    <h4>Online Course</h4>
+                    <p>HTML, CSS, JavaScript</p>
                 </div>
-            </div>
 
-            <div class="resume-detail about">
-                <h2 class="heading">About <span>Me</span> </h2>
-                <p class="desc"> I'm Web Developer With 2 Years Experience </p>
-                <div class="resume-list">
-                    <div class="resume-item">
-                        <p>Name: <span>Hussein Essam</span></p>
-                    </div>
-                    <div class="resume-item">
-                        <p>Gender: <span> Male</span></p>
-                    </div>
-                    <div class="resume-item">
-                        <p>Age: <span>27 Years Old</span></p>
-                    </div>
-                    <div class="resume-item">
-                        <p>Status: <span>Single</span></p>
-                    </div>
-                    <div class="resume-item">
-                        <p>City: <span>Cairo</span></p>
-                    </div>
-                    <div class="resume-item">
-                        <p>Nationality: <span>Egyptian</span></p>
-                    </div>
-                    <div class="resume-item">
-                        <p>Experience: <span>2 Years </span></p>
-                    </div>
-                    <div class="resume-item">
-                        <p>Full Time: <span>Available</span></p>
-                    </div>
-                    <div class="resume-item">
-                        <p>Freelance: <span>Available</span></p>
-                    </div>
-                    <div class="resume-item">
-                        <p>Phone: <span>(+010) 3033 2003</span></p>
-                    </div>
-                    <div class="resume-item">
-                        <p>Email:<span>husseinessam998@gmail.com</span></p>
-                    </div>
-                    <br>
-                    <div class="resume-item">
-                        <p>Languages: <span>Arabic, English</span></p>
-                    </div>
+                <div class="tab-item resume-item">
+                    <h4>2025</h4>
+                    <h4>Programming Course</h4>
+                    <h4>Online Course</h4>
+                    <p>HTML, CSS, JavaScript</p>
+                </div>
+
+                <div class="tab-item resume-item">
+                    <h4>2025</h4>
+                    <h4>Programming Course</h4>
+                    <h4>Online Course</h4>
+                    <p>HTML, CSS, JavaScript</p>
+                </div>
+
+                <div class="tab-item resume-item">
+                    <h4>2024 - 2023</h4>
+                    <h4>Master in Computer Science</h4>
+                    <h4>Online Course - Future University</h4>
+                    <p>HTML, CSS, JavaScript</p>
+                </div>
+
+                <div class="tab-item resume-item">
+                    <h4>2023 - 2024</h4>
+                    <h4>Web Development Bootcamp</h4>
+                    <h4>Online Course Platform</h4>
+                    <p>HTML, CSS, JavaScript</p>
+                </div>
+
+                <div class="tab-item resume-item">
+                    <h4>2022 - 2023</h4>
+                    <h4>Full Stack Web Development</h4>
+                    <h4>Online Course Platform</h4>
+                    <p>HTML, CSS, JavaScript</p>
+                </div>
+
+                <div class="tab-item resume-item">
+                    <h4>2021 - 2022</h4>
+                    <h4>Certified Web Development</h4>
+                    <h4>Online Course</h4>
+                    <p>HTML, CSS, JavaScript</p>
+                </div>
+
+                <div class="tab-item resume-item">
+                    <h4>2017 - 2018</h4>
+                    <h4>Doctor of Engineering</h4>
+                    <h4>Future University</h4>
+                    <p>HTML, CSS, JavaScript</p>
+                </div>
+                <div class="tab-item resume-item">
+                    <h4>2015 - 2017</h4>
+                    <h4>Master Of Computer Science</h4>
+                    <h4>Future University</h4>
+                    <p>HTML, CSS, JavaScript</p>
+                </div>
+                <div class="tab-item resume-item">
+                    <h4>2013 - 2015</h4>
+                    <h4>Bachelor Of Computer Science</h4>
+                    <h4>Future University</h4>
+                    <p>HTML, CSS, JavaScript</p>
                 </div>
             </div>
         </div>
-    </div>
-
      </section>
+    <!-- portfolio (work, service) section -->
+     <section class="section portfolio">
+        <h2 class="title">Portfolio</h2>
+        <div class="tab-box">
+            <div class="tab-list portfolio-list active">
+                <h3>My Work</h3>
+            </div>
 
-    <!-- portfolio section -->
-     <section class="portfolio">
-        <h2 class="heading">Latest <span>Project</span></h2>
-        <div class="portfolio-container">
-            <div class="portfolio-box">
-                <div class="portfolio-detail active">
-                    <p class="numb">01</p>
-                    <h3>Front-End Project</h3>
-                    <p>Project About Tourism Development Authority</p>
-                    <div class="tech">
+            <div class="tab-list portfolio-list">
+                <h3>My Service</h3>
+            </div>
+        </div>
+    <div class="tab-wrapper">
+        <div class="tab-grid portfolio-box work active">
+            <div class="tab-item portfolio-item">
+                <div class="work-img">
+                    <img src="My Portfolio/work7.jpg" alt="">
+                </div>
+                <div class="work-info">
+                    <h4>Front-End Project</h4>
+                    <p>HTML, CSS, JavaScript</p>
+                    <div class="tech-used">
                         <p>HTML5, CSS3, JavaScript</p>
                     </div>
-                    <div class="live-github">
-                        <a href="#"><i class='bx bx-arrow-back'></i><span>Live Project</span></a>
-                        <a href="#"><i class='bx bxl-github'></i><span>Github Repository</span></a>
+                    <div class="portfolio-icon work-icon">
+                        <a href="#">
+                            <i class='bx bx-arrow-back'></i>
+                            <span class="tooltip">Preview</span>
+                        </a>
+
+                        <a href="#">
+                            <i class='bx bxl-github'></i>
+                            <span class="tooltip">Github Repository</span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="tab-item portfolio-item">
+                <div class="work-img">
+                    <img src="My Portfolio/work8.jpg" alt="">
+                </div>
+                <div class="work-info">
+                    <h4>Full Stack Project</h4>
+                    <p>Next.js, Tailwind.css, Node.js</p>
+                    <div class="tech-used">
+                    <p>Next.js, Tailwind.css, Node.js</p>
+                    </div>
+                    <div class="portfolio-icon work-icon">
+                        <a href="#">
+                            <i class='bx bx-arrow-back'></i>
+                            <span class="tooltip">Preview</span>
+                        </a>
+
+                        <a href="#">
+                            <i class='bx bxl-github'></i>
+                            <span class="tooltip">Github Repository</span>
+                        </a>
                     </div>
                 </div>
-
-                <div class="portfolio-detail">
-                    <p class="numb">02</p>
-                    <h3>Full Stack Project</h3>
-                    <p>Project About Tourism Development Authority</p>
-                    <div class="tech">
-                        <p>MongoDB, Express.js, React.js, Node.js</p>
+            </div>
+            <div class="tab-item portfolio-item">
+                <div class="work-img">
+                    <img src="My Portfolio/work3.jpg" alt="">
+                </div>
+                <div class="work-info">
+                    <h4>Front-End Project</h4>
+                    <p>React.js, Tailwind.css</p>
+                    <div class="tech-used">
+                    <p>React.js, Tailwind.css</p>
                     </div>
-                    <div class="live-github">
-                        <a href="#"><i class='bx bx-arrow-back'></i><span>Live Project</span></a>
-                        <a href="#"><i class='bx bxl-github'></i><span>Github Repository</span></a>
+                    <div class="portfolio-icon work-icon">
+                        <a href="#">
+                            <i class='bx bx-arrow-back'></i>
+                            <span class="tooltip">Preview</span>
+                        </a>
+
+                        <a href="#">
+                            <i class='bx bxl-github'></i>
+                            <span class="tooltip">Github Repository</span>
+                        </a>
                     </div>
                 </div>
-
-                <div class="portfolio-detail">
-                    <p class="numb">03</p>
-                    <h3>Front-End Project</h3>
-                    <p>Project About Tourism Development Authority</p>
-                    <div class="tech">
-                        <p>React.js, Tailwimd CSS</p>
-                    </div>
-                    <div class="live-github">
-                        <a href="#"><i class='bx bx-arrow-back'></i><span>Live Project</span></a>
-                        <a href="#"><i class='bx bxl-github'></i><span>Github Repository</span></a>
-                    </div>
+            </div>
+            
+            <div class="tab-item portfolio-item">
+                <div class="work-img">
+                    <img src="My Portfolio/work4.jpg" alt="">
                 </div>
+                <div class="work-info">
+                    <h4>Front-End Project</h4>
+                    <p>HTML5, Bootstrap, JavaScript</p>
+                    <div class="tech-used">
+                    <p>HTML5, Bootstrap, JavaScript</p>
+                    </div>
+                    <div class="portfolio-icon work-icon">
+                        <a href="#">
+                            <i class='bx bx-arrow-back'></i>
+                            <span class="tooltip">Preview</span>
+                        </a>
 
-                <div class="portfolio-detail">
-                    <p class="numb">04</p>
-                    <h3>Full Stack Project</h3>
-                    <p>Project About Tourism Development Authority</p>
-                    <div class="tech">
-                        <p>MongoDB, Express.js, AngularJS, Node.js</p>
-                    </div>
-                    <div class="live-github">
-                        <a href="#"><i class='bx bx-arrow-back'></i><span>Live Project</span></a>
-                        <a href="#"><i class='bx bxl-github'></i><span>Github Repository</span></a>
-                    </div>
-                </div>
-
-                <div class="portfolio-detail">
-                    <p class="numb">05</p>
-                    <h3>Front-End Project</h3>
-                    <p>Project About Tourism Development Authority</p>
-                    <div class="tech">
-                        <p>Vue.js, Tailwind CSS</p>
-                    </div>
-                    <div class="live-github">
-                        <a href="#"><i class='bx bx-arrow-back'></i><span>Live Project</span></a>
-                        <a href="#"><i class='bx bxl-github'></i><span>Github Repository</span></a>
-                    </div>
-                </div>
-
-                <div class="portfolio-detail">
-                    <p class="numb">06</p>
-                    <h3>Full Stack Project</h3>
-                    <p>Project About Tourism Development Authority</p>
-                    <div class="tech">
-                        <p>MongoDB, Express.js, Vue.js, Node.js</p>
-                    </div>
-                    <div class="live-github">
-                        <a href="#"><i class='bx bx-arrow-back'></i><span>Live Project</span></a>
-                        <a href="#"><i class='bx bxl-github'></i><span>Github Repository</span></a>
+                        <a href="#">
+                            <i class='bx bxl-github'></i>
+                            <span class="tooltip">Github Repository</span>
+                        </a>
                     </div>
                 </div>
             </div>
 
-
-            <div class="portfolio-box">
-                <div class="portfolio-carousel">
-                    <div class="img-slide">
-                        <div class="img-item">
-                            <img src="images/portfolio1.jpg">
-                        </div>
-
-                    <div class="img-item">
-                        <img src="images/portfolio2.jpg">
+            <div class="tab-item portfolio-item">
+                <div class="work-img">
+                    <img src="My Portfolio/work5.jpg" alt="">
+                </div>
+                <div class="work-info">
+                    <h4>Full Stack Project</h4>
+                    <p>Next.js, Tailwind.css, Node.js</p>
+                    <div class="tech-used">
+                    <p>Next.js, Tailwind.css, Node.js</p>
                     </div>
+                    <div class="portfolio-icon work-icon">
+                        <a href="#">
+                            <i class='bx bx-arrow-back'></i>
+                            <span class="tooltip">Preview</span>
+                        </a>
 
-                    <div class="img-item">
-                        <img src="images/portfolio3.jpg">
-                    </div>
-
-                    <div class="img-item">
-                        <img src="images/portfolio4.jpg">
-                    </div>
-
-                    <div class="img-item">
-                        <img src="images/portfolio5.jpg">
-                    </div>
-
-                    <div class="img-item">
-                        <img src="images/portfolio6.jpg">
+                        <a href="#">
+                            <i class='bx bxl-github'></i>
+                            <span class="tooltip">Github Repository</span>
+                        </a>
                     </div>
                 </div>
-
             </div>
-               
-             <div class="navigation">
-                 <button class="arrow-left disabled"><i class='bx bx-chevron-left'></i></button>
-                 <button class="arrow-right"><i class='bx bx-chevron-right'></i></button>
-             </div>
+
+            <div class="tab-item portfolio-item">
+                <div class="work-img">
+                    <img src="My Portfolio/work6.jpg" alt="">
+                </div>
+                <div class="work-info">
+                    <h4>Full Stack Project</h4>
+                    <p>Next.js, Tailwind.css, Node.js</p>
+                    <div class="tech-used">
+                    <p>Next.js, Tailwind.css, Node.js</p>
+                    </div>
+                    <div class="portfolio-icon work-icon">
+                        <a href="#">
+                            <i class='bx bx-arrow-back'></i>
+                            <span class="tooltip">Preview</span>
+                        </a>
+
+                        <a href="#">
+                            <i class='bx bxl-github'></i>
+                            <span class="tooltip">Github Repository</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-item portfolio-item">
+                <div class="work-img">
+                    <img src="My Portfolio/work1.jpg" alt="">
+                </div>
+                <div class="work-info">
+                    <h4>Front-End Developer</h4>
+                    <p>HTML5, CSS3, JavaScript</p>
+                    <div class="tech-used">
+                    <p>HTML5, CSS3, JavaScript</p>
+                    </div>
+                    <div class="portfolio-icon work-icon">
+                        <a href="#">
+                            <i class='bx bx-arrow-back'></i>
+                            <span class="tooltip">Preview</span>
+                        </a>
+
+                        <a href="#">
+                            <i class='bx bxl-github'></i>
+                            <span class="tooltip">Github Repository</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-item portfolio-item">
+                <div class="work-img">
+                    <img src="My Portfolio/work2.jpg" alt="">
+                </div>
+                <div class="work-info">
+                    <h4>Front-End Developer</h4>
+                    <p>HTML5, CSS3, JavaScript</p>
+                    <div class="tech-used">
+                    <p>HTML5, CSS3, JavaScript</p>
+                    </div>
+                    <div class="portfolio-icon work-icon">
+                        <a href="#">
+                            <i class='bx bx-arrow-back'></i>
+                            <span class="tooltip">Preview</span>
+                        </a>
+
+                        <a href="#">
+                            <i class='bx bxl-github'></i>
+                            <span class="tooltip">Github Repository</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-grid portfolio-box service">
+            <div class="tab-item portfolio-item">
+                <div class="portfolio-icon service-icon">
+                    <i class='bx bx-code-alt icon'></i>
+                    <a href="#"><i class='bx bx-arrow-back'></i></a>
+                </div>
+                <h4>Web Development</h4>
+                <p>Web Development is the process of creating websites and web applications.</p>
+            </div>
+            <div class="tab-item portfolio-item">
+                <div class="portfolio-icon service-icon">
+                    <i class='bx bx-palette icon'></i>
+                    <a href="#"><i class='bx bx-arrow-back'></i></a>
+                </div>
+                <h4>Graphic Design</h4>
+                <p>Graphic Design is the process of creating visual content for websites and web applications.</p>
+            </div>
+
+            <div class="tab-item portfolio-item">
+                <div class="portfolio-icon service-icon">
+                    <i class='bx bxs-paint icon'></i>
+                    <a href="#"><i class='bx bx-arrow-back'></i></a>
+                </div>
+                <h4>UI/UX Design</h4>
+                <p>UI/UX Design is the process of creating user interfaces and user experiences for websites and web applications.</p>
+            </div>
+
+            <div class="tab-item portfolio-item">
+                <div class="portfolio-icon service-icon">
+                    <i class='bx bx-signal-5 icon'></i>
+                    <a href="#"><i class='bx bx-arrow-back'></i></a>
+                </div>
+                <h4>SEO</h4>
+                <p>SEO is the process of optimizing websites and web applications for search engines.</p>
+            </div>
+            <div class="tab-item portfolio-item">
+                <div class="portfolio-icon service-icon">
+                    <i class='bx bx-slideshow icon'></i>
+                    <a href="#"><i class='bx bx-arrow-back'></i></a>
+                </div>
+                <h4>Video Editing</h4>
+                <p>Video Editing is the process of creating videos for websites and web applications.</p>
+            </div>
+            <div class="tab-item portfolio-item">
+                <div class="portfolio-icon service-icon">
+                    <i class='bx bx-camera icon'></i>
+                    <a href="#"><i class='bx bx-arrow-back'></i></a>
+                </div>
+                <h4>Photography</h4>
+                <p>Photography is the process of creating photos for websites and web applications.</p>
+            </div>
         </div>
     </div>
-
-     </section>
-
-    <!-- contact section -->
     
-    <section class="contact">
-        <div class="contact container">
-            <div class="contact-box">
-                <h2>Let's Work Together</h2>
-                <p class="desc">I'm here to help you with any questions or concerns you may have. Please feel free to contact me and I'll do my best to assist you.</p>
-                <div class="contact-detail">
-                    <i class='bx bxs-phone'></i>
-                    <div class="detail">
-                        <p>Phone</p>
-                        <p>(+010) 3033 2003</p>
-                    </div>
-                </div>
-                <div class="contact-detail">
-                    <i class='bx bxs-envelope'></i>
-                    <div class="detail">
-                        <p>Email</p>
-                        <p>husseinessam998@gmail.com</p>
-                    </div>
-                </div>
-
-                <div class="contact-detail">
-                    <i class='bx bxs-map'></i>
-                    <div class="detail">
-                        <p>Address</p>
-                        <p>4 Street Magdy Youssif, Villa Number 4 In Your Left Hand</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="contact-box">
-                <form action=""></form>
-                <h2 class="heading">Contact <span>Me!</span></h2>
+     </section>
+    <!-- contact section -->
+     <section class="section contact active">
+        <h2 class="title">Contact</h2>
+        <div class="contact-wrapper">
+            <form action="" class="contact-form">
+                <h3>Let's Work Together!</h3>
                 <div class="field-box">
                     <input type="text" placeholder="Full Name" required>
                     <input type="email" placeholder="Email Address" required>
@@ -484,13 +578,20 @@
                     <input type="text" placeholder="Email Subject" required>
                     <textarea name="" id="" placeholder="Your Message" required></textarea>
                 </div>
-                <button type="submit" class="btn">Send Message</button>
-            </div>
+                <div class="contact-btn">
+                    <button type="submit" class="btn">Send Message</button>
+                </div>
+            </form>
+
         </div>
+
     </section>
+    </div>
+</div>
+    
 
-    <!-- custom js -->
-    <script src="js/script.js"></script>
+
+<!-- JavaScript File Script -->
+<script src="script.js"></script>    
 </body>
-
 </html>
